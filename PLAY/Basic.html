@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+
+  <body>
+    <h2>Can you change my mood</h2> 
+     <button onclick="document.getElementById('myImage').src='images/smile.png'">happy</button>
+    <button onclick="document.getElementById('myImage').src='images/sad.jpg'">Sad</button><br>
+
+    <img id="myImage" src="images/shock.png" style="width: 30%" />
+    
+<br><br>
+    <label for="Moods"><b>Choose a Mood:</b></label>
+    <select id="changeface" name="Moods" onchange="changemood()">
+      <option value = 'select'>---Select----</option>
+      <option value="sad"> Sad </option>
+      <option value="Happy"> Happy</option>
+      <option value="refresh">Refresh</option>
+    </select>
+
+
+
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+<!-- Using document.write() after an HTML document is loaded, will delete all existing HTML: --> 
+
+
+
+  </body>
+  <script>
+    // window.print(777777777777777);
+      function demo() {
+        // const element = document.activeElement.tagName;
+        location.reload();
+        // document.getElementById("myImage").src = "images/shock.png";
+      }
+      function changemood() {
+        const select = document.getElementById("changeface");
+        const img = document.getElementById("myImage");
+        const val = select.value;
+        if (val == "sad") {
+          img.src = "images/sad.jpg";
+        } else if (val == "Happy") {
+          img.src = "images/smile.png";
+        } else if (val =="refresh") {
+          demo();
+        }
+      }
+    </script>
+  <script>      document.write('heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee');
+</script>
+</html>
