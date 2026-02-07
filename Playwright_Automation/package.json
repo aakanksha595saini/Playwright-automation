@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "axe-core": "^4.11.1",
     "playwright": "^1.57.0"
   },
   "devDependencies": {
