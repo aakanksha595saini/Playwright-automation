@@ -1,7 +1,8 @@
 
 // @ts-check
 import { test, expect } from '@playwright/test';
-// import AxeBuilder from '@axe-/playwright'; //Accessibility testing framework
+
+// import AxeBuilder from '@axe-core/playwright'; //Accessibility testing framework
 
 
 test.only('Youtube', async ({ page }) => {
